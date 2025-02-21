@@ -61,7 +61,7 @@
                         headers: {
                             'Content-Type': 'application/json',
                         },
-                        body: JSON.stringify({ script: scriptContent }), // Send the Python script
+                        body: JSON.stringify({ script: "/jp.py" }), // Send the Python script
                         })
                         .then(response => response.json())
                         .then(data => {
