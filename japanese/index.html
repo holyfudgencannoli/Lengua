@@ -34,27 +34,26 @@
 
     <script src="../js/xterm.js"></script>
     
+    <button id="run-script">Run Python Script</button>
+    <pre id="output"></pre>
+
     <script>
-        document.getElementById("start-btn").addEventListener("click", function() {
-            const terminalContainer = document.getElementById("terminal-container");
-            terminalContainer.style.display = "block";
-
-            const term = new Terminal();
-            term.open(terminalContainer);
-            term.write('Welcome to the Web Terminal!\r\n');
-        });
-
-        fetch('https://github.com/holyfudgencannoli/Lengua/blob/56713a61e687f113d65bb706c8cc1997500687ea/japanese/jp.py')
-                .then(response => {
-                    if (!response.ok) { // Check if response was successful
-                        throw new Error('Network response was not ok');
-                    }
-                        return response.json(); // Parse the JSON response
+        document.getElementById('run-script').addEventListener('click', function() {
+            fetch('/run-python')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('output').textContent = data;
                 })
-                .then(data => console.log(data))  // Handle the data
-                .catch(error => console.error('There was a problem with the fetch operation:', error));
-
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
     </script>
 
+</body>
+</html>
+
+<body>
+    
 </body>
 </html>
