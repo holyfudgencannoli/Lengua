@@ -55,9 +55,20 @@
         document.getElementById('run-script').addEventListener('click', function() {
             fetch('../js/run_script.js')
                 .then(response => response.text())
-                .then(data => {
-                    document.getElementById('output').innerHTML = data;
-                })
+                .then(scriptContent => {
+                    fetch('/execute-python', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ script: scriptContent }), // Send the Python script
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log('Python script executed:', data);
+                        })
+                       .catch(error => console.error('Error executing Python script:', error)); = data;
+                    })
                 .catch(error => {
                     console.error('Error:', error);
                 });
