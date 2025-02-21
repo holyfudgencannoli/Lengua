@@ -47,9 +47,9 @@
                 .then(response => {
                     if (!response.ok) { // Check if response was successful
                         throw new Error('Network response was not ok');
-    }
+                    }
                         return response.json(); // Parse the JSON response
-  })
+                })
                 .then(data => console.log(data))  // Handle the data
                 .catch(error => console.error('There was a problem with the fetch operation:', error));
         });
