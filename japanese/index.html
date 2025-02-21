@@ -32,7 +32,21 @@
     <button id="start-btn">Start Terminal</button>
     <div id="terminal-container"></div>
 
-    <script src="../js/xterm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
+    <script>
+        document.getElementById("start-btn").addEventListener("click", function() {
+            const terminalContainer = document.getElementById("terminal-container");
+            terminalContainer.style.display = "block";
+
+            const term = new Terminal();
+            term.open(terminalContainer);
+            term.write('Welcome to the Web Terminal!\r\n');
+
+            term.onData(e => {
+                term.write('\r\nYou typed: ' + e + '\r\n');
+            });
+        });
+    </script>
     
     <button id="run-script">Run Python Script</button>
     <pre id="output"></pre>
@@ -50,10 +64,5 @@
         });
     </script>
 
-</body>
-</html>
-
-<body>
-    
 </body>
 </html>
