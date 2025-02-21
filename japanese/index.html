@@ -42,8 +42,9 @@
             const term = new Terminal();
             term.open(terminalContainer);
             term.write('Welcome to the Web Terminal!\r\n');
-            
-            fetch('https://github.com/holyfudgencannoli/Lengua/blob/56713a61e687f113d65bb706c8cc1997500687ea/japanese/jp.py')
+        });
+
+        fetch('https://github.com/holyfudgencannoli/Lengua/blob/56713a61e687f113d65bb706c8cc1997500687ea/japanese/jp.py')
                 .then(response => {
                     if (!response.ok) { // Check if response was successful
                         throw new Error('Network response was not ok');
@@ -52,7 +53,7 @@
                 })
                 .then(data => console.log(data))  // Handle the data
                 .catch(error => console.error('There was a problem with the fetch operation:', error));
-        });
+
     </script>
 
 </body>
