@@ -56,7 +56,7 @@
             fetch('../js/run_script.js')
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementById('output').textContent = data;
+                    document.getElementById('output').innerHTML = data;
                 })
                 .catch(error => {
                     console.error('Error:', error);
