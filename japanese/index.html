@@ -33,6 +33,7 @@
     <div id="terminal-container"></div>
 
     <script src="../js/xterm.js"></script>
+    
     <script>
         document.getElementById("start-btn").addEventListener("click", function() {
             const terminalContainer = document.getElementById("terminal-container");
@@ -42,9 +43,8 @@
             term.open(terminalContainer);
             term.write('Welcome to the Web Terminal!\r\n');
 
-            
+            fetch("https://github.com/holyfudgencannoli/Lengua/blob/main/japanese/jp.py",);
         });
-        
     </script>
 
 </body>
