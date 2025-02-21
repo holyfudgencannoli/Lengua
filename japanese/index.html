@@ -8,17 +8,45 @@
 
     <meta charset="UTF-16">
     <title>Page title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #terminal-container {
+            display: none;
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+    </style>
     
 </head>
 <body>
     <div>
         へようこそ！
-        <button type="button" py-click="runjp()">begin</button>
     </div>
+
+    <button id="start-btn">Start Terminal</button>
+    <div id="terminal-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
     <script>
-        function runjp() {
-        python3 "jp.py"
-        } 
+        document.getElementById("start-btn").addEventListener("click", function() {
+            const terminalContainer = document.getElementById("terminal-container");
+            terminalContainer.style.display = "block";
+
+            const term = new Terminal();
+            term.open(terminalContainer);
+            term.write('Welcome to the Web Terminal!\r\n');
+
+            term.onData(e => {
+                term.write('\r\nYou typed: ' + e + '\r\n');
+            });
+        });
     </script>
+
 </body>
 </html>
