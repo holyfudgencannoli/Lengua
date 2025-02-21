@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 // Endpoint to fetch data from an Excel file
 app.get('/get_excel_data', (req, res) => {
-    const filePath = path.join(__dirname, 'data.xlsx');  // Adjust path as needed
+    const filePath = path.join(__dirname, '../japanese/jp_vocab.xlsx');  // Adjust path as needed
 
     try {
         // Read the Excel file
