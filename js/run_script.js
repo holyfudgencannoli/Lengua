@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // Endpoint to execute the Python script
 app.get('/run-python', (req, res) => {
-  exec('python3 script.py', (err, stdout, stderr) => {
+  exec('python3 jp.py', (err, stdout, stderr) => {
     if (err) {
       console.error('Error executing script:', err);
       return res.status(500).send('Error executing Python script');
