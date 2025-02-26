@@ -2,83 +2,31 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/xterm.css">
     <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="../js/xterm.js">
-
-    <meta charset="UTF-16">
-    <title>Page title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        #terminal-container {
-            display: none;
-            width: 80%;
-            height: 300px;
-            margin: auto;
-            border: 1px solid #000;
-        }
-    </style>
-    
 </head>
 <body>
     <div>
-        <h1>へようこそ！</h1>
+        <h1 class="text-center">へようこそ！</h1>
     </div>
 
-    <button id="start-btn">Start Terminal</button>
-    <div id="terminal-container"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
-    <script>
-        document.getElementById("start-btn").addEventListener("click", function() {
-            const terminalContainer = document.getElementById("terminal-container");
-            terminalContainer.style.display = "block";
+    <div id="q_word"></div>
 
-            const term = new Terminal();
-            term.open(terminalContainer);
-            term.write('Welcome to the Web Terminal!\r\n');
-
-            term.onData(e => {
-                term.write('\r\nYou typed: ' + e + '\r\n');
-            });
-        });
-    </script>
-    
-    <button id="run-script">Run Python Script</button>
-    <pre id="output"></pre>
-
-    <script>
-        document.getElementById('run-script').addEventListener('click', function() {
-            fetch('../js/run_script.js')
-                .then(response => response.text())
-                .then(scriptContent => {
-                    fetch('/execute-python', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({ script: "/jp.py" }), // Send the Python script
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            console.log('Python script executed:', data);
-                        })
-                       .catch(error => console.error('Error executing Python script:', error)); = data;
-                    })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        });
-    </script>
-
+    <div class="text-center" id="question">
+        <h2 class="text-center">Reading?</h2>
+    </div>
+    <div id="ans" class="text-center">
+        <label>type here:</label>
+        <input id="ans_text" type="text">
+        <button id="submit" type="submit">Submit</button> 
+        <script>
+            var ans_text = window.document.getElementById("ans_text");  
+            document.getElementById("submit").onclick = function () {
+                alert(console.log(ans_text));
+            }
+        </script>    
+    </div>
+    <script src="../js/ajax-utils.js"></script>
+    <script src="../js/nijgonrge.js"></script>
 </body>
-
-    function choose(choices) {
-  var index = Math.floor(Math.random() * choices.length);
-  return choices[index];
-}
 </html>
