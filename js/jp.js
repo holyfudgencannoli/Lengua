@@ -41,7 +41,7 @@ $(document).ready(function () {
   // Event listener for "Check Reading" button
   $('#check-reading-answer').click(function () {
     var userReading = $('#english-reading-input').val().trim().toLowerCase();
-    if (userReading === currentWord.reading.toLowerCase()) {
+    if (userReading === currentWord.pronounciation.toLowerCase()) {
       alert("Correct Reading!");
       $('#meaning-prompt').show();  // Show the meaning prompt
       $('#meaning-input').show();  // Show the meaning input field
