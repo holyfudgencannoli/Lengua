@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
-    <title>レーングア～日本語ボキャブラリーテスト</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Word Picker</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div>
-        <h1 class="text-center">へようこそ！</h1>
-    </div>
+  <div id="word-display">
+    <p id="japanese-word">Press "Pick a Word" to start</p>
+    <input type="text" id="english-reading-input" placeholder="Enter the reading (Romaji)">
+    <button id="check-reading-answer">Check Reading</button>
+    <button id="pick-word">Pick a Word</button>
+    <p id="meaning-prompt" style="display:none;">Now, enter the meaning:</p>
+    <input type="text" id="meaning-input" placeholder="Enter the meaning" style="display:none;">
+    <button id="check-meaning-answer" style="display:none;">Check Meaning</button>
+  </div>
 
-
-    <div id="q_word"></div>
-
-    <div class="text-center" id="question">
-        <h2 class="text-center">Reading?</h2>
-    </div>
-    <div id="ans" class="text-center">
-        <label>type here:</label>
-        <input id="ans_text" type="text">
-        <button id="submit" type="submit">Submit</button> 
-        <script>
-            var ans_text = window.document.getElementById("ans_text");  
-            document.getElementById("submit").onclick = function () {
-                alert(console.log(ans_text));
-            }
-        </script>    
-    </div>
-    <script src="../js/ajax-utils.js"></script>
-    <script src="../js/nijgonrge.js"></script>
+  <script src="../js/jp.js"></script>
 </body>
 </html>
