@@ -8,7 +8,8 @@ $(document).ready(function () {
       .then(response => response.json())  // Parse the JSON data
       .then(data => {
         words = data;  // Use the data as words
-        return words;  // You can log the words to the console for verification
+        console.log(words);  // You can log the words to the console for verification
+        $('#pick-word').prop('disabled', false);  // Enable the "Pick a Word" button after words are loaded
       })
       .catch(error => console.error('Error loading the JSON file:', error));  // Handle any errors
   }
