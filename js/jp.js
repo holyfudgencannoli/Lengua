@@ -55,11 +55,11 @@ $(document).ready(function () {
   // Event listener for "Check Meaning" button
   $('#check-meaning-answer').click(function () {
     var userMeaning = $('#meaning-input').val().trim();
-    if (userMeaning.toLowerCase() === currentWord.english.toLowerCase()) {
+    if (userMeaning.toLowerCase() === currentWord.translation.toLowerCase()) {
       alert("Correct Meaning!");
       $('#pick-word').show();  // Show the pick word button again to start over
     } else {
-      alert("Incorrect Meaning! The correct answer is: " + currentWord.english);
+      alert("Incorrect Meaning! The correct answer is: " + currentWord.translation);
     }
   });
 
