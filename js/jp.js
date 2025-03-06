@@ -1,6 +1,17 @@
 $(document).ready(function () {
+  $('#try-again').hide();  // Hide the try again button until after first attempt
   var words = [];  // We will load the words array from the JSON file
   var currentWord = null;
+  
+  // Funtion to restart
+  
+  function restart() {
+      location.reload();
+  }
+  
+  $('#try-again').click(function () {
+    location.reload(); // Reloads the current page
+});
 
   // Function to load the words from the JSON file
   function loadWords() {
@@ -30,6 +41,7 @@ $(document).ready(function () {
     $('#check-meaning-answer').hide();  // Hide the check meaning button
     $('#check-reading-answer').show();  // Show the check reading button
     $('#pick-word').hide();  // Hide the pick word button after selecting a word
+    
   }
 
   // Event listener for "Pick a Word" button
@@ -49,6 +61,7 @@ $(document).ready(function () {
       $('#check-reading-answer').hide();  // Hide the check reading button
     } else {
       alert("Incorrect Reading! Try again.");
+      $('#try-again').show();  // Show the restart button
     }
   });
 
@@ -60,6 +73,7 @@ $(document).ready(function () {
       $('#pick-word').show();  // Show the pick word button again to start over
     } else {
       alert("Incorrect Meaning! The correct answer is: " + currentWord.translation);
+      $('#try-again').show();  // Show the restart button
     }
   });
 
