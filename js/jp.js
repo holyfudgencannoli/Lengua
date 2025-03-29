@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('#check-reading-answer').hide()
   $('#hiragana').hide();
   $('#try-again').hide();  // Hide the try again button until after first attempt
   var words = [];  // We will load the words array from the JSON file
@@ -41,7 +42,6 @@ $(document).ready(function () {
     $('#meaning-prompt').hide();  // Hide the meaning prompt
     $('#meaning-input').hide();  // Hide the meaning input
     $('#check-meaning-answer').hide();  // Hide the check meaning button
-    $('#check-reading-answer').hide();  // Show the check reading button
     $('#pick-word').hide();  // Hide the pick word button after selecting a word
     
   }
