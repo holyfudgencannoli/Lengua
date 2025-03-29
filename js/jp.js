@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $('#hiragana').hide();
   $('#try-again').hide();  // Hide the try again button until after first attempt
   var words = [];  // We will load the words array from the JSON file
   var currentWord = null;
@@ -34,6 +35,7 @@ $(document).ready(function () {
     var randomIndex = Math.floor(Math.random() * words.length);
     currentWord = words[randomIndex];
     $('#japanese-word').text(currentWord.japanese);  // Display the Japanese word
+    $('#hiragana').text(currentWord.pronounciation); // Display the hiragana, hidden at first, to show after first try
     $('#english-reading-input').val('');  // Clear the input field for reading
     $('#meaning-input').val('');  // Clear the meaning input
     $('#meaning-prompt').hide();  // Hide the meaning prompt
@@ -61,6 +63,7 @@ $(document).ready(function () {
       $('#check-reading-answer').hide();  // Hide the check reading button
     } else {
       alert("Incorrect Reading! Try again.");
+      $('#hiragana').show(); // Show thr hiragana pronounciation as a hint/learning utility
       $('#try-again').show();  // Show the restart button
     }
   });
