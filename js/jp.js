@@ -63,7 +63,7 @@ $(document).ready(function () {
       $('#check-meaning-answer').show();  // Show the check meaning button
       $('#check-reading-answer').hide();  // Hide the check reading button
     } else {
-      alert("Incorrect Reading! Correct reading is:" + currentWord.pronounciation + "Try again.");
+      alert("Incorrect Reading! Correct reading is: " + currentWord.pronounciation.toUpperCase + ". Try again.");
      // $('#hiragana').show(); // Show thr hiragana pronounciation as a hint/learning utility
       $('#try-again').show();  // Show the restart button
     }
