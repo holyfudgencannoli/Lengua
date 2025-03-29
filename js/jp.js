@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('#meaning-prompt').hide();  // Hide the meaning prompt
     $('#meaning-input').hide();  // Hide the meaning input
     $('#check-meaning-answer').hide();  // Hide the check meaning button
-    $('#check-reading-answer').show();  // Show the check reading button
+    $('#check-reading-answer').hide();  // Show the check reading button
     $('#pick-word').hide();  // Hide the pick word button after selecting a word
     
   }
@@ -50,6 +50,7 @@ $(document).ready(function () {
   $('#pick-word').click(function () {
     pickRandomWord(); // Pick a new word when the button is clicked again
     $('#pick-word').hide();  // Hide the pick word button again after picking a word
+    $('#check-reading-answer').show();
   });
 
   // Event listener for "Check Reading" button
