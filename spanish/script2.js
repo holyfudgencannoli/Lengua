@@ -475,7 +475,7 @@ function checkAnswer() {
         }, 3000);
         
     } else {
-        alert("Try again, you can do it. Don't give up! The correct answer is: ", currentQ.answer);
+        alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
         $("#qbox").css("background", "#ff0300")
         document.getElementById("ans").value ="";
     }
