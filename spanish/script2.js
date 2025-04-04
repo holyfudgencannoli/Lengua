@@ -472,7 +472,7 @@ function checkAnswer() {
             $("#q2").show();
             $("#q3").hide();
             loadQuestion()                        
-        }, 3000);
+        }, 6000);
         
     } else {
         alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
