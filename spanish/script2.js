@@ -474,6 +474,8 @@ function checkAnswer() {
             loadQuestion()                        
         }, 6000);
         
+    } elif (ans === "") {
+            alert("enter answer");
     } else {
         alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
         $("#qbox").css("background", "#ff0300")
@@ -486,15 +488,7 @@ $(document).ready(function () {
     $("#submit").click(function () {
         checkAnswer();
     });
-    $("#next").click(function () {
-        let ans = document.getElementById("ans").value;
-        if (ans === "") {
-            alert("enter answer");
-        } else {
-            alert("after answering, press submit")
-        }
-        
-    })
+    
     
     
 });
