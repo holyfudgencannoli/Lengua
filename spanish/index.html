@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="spanish.css">
     <meta charset="UTF-8">
     <title>Lengua App</title>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="script2.js"></script>
+    <script src="script2.js"></script>    
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="d-flex container">
-            <img>
+        <div class="d-flex container-fluid">
+            <a class="nav-link" href="#"><h1 id="navtitle">Lengua</h1></a>
+            <ul class="nav justify-content-end m-3">
+               
+            </ul>
+           
         </div>
     </nav>
+    
+    <div id="newsbar" class="container-fluid d-flex-inline my-3 align-middle">
+        <p id="newsbar-text">This is the area where daily updates will be displayed! Coming soon.</p>
+        
+    </div>
     
     <div id="quiz-container">
         <h2 id="q1"></h2>
         <div id="qbox"><h2 id="q2"></h2><h2 id="q3"></h2></div>
         <div><input id="ans" placeholder="Type here..."></div> <br>
-        <button id="submit">Submit</button>
-        <button id="next">Next</button>
+        <button id="submit">Submit</button><!-- loader thing maybe? -->
     </div>
     <p id="result"></p>
+    
+    <footer>
+        <div id="footer" class="fixed-bottom container-fluid">
+            
+        </div>
+    </footer>
+    
 </body>
 </html>
