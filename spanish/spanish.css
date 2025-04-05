@@ -5,3 +5,83 @@ body{
 nav {
     background: #ff0300;
 }
+
+#quiz-container {
+    text-align: center;
+    border: #000 2px;
+    background: #eeff95;
+}
+
+#navtitle {
+    font-size:72px;
+    color: #ffdc00;
+}
+
+button {
+  background: linear-gradient(to right, steelblue, lightblue);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to right, lightblue, steelblue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: steelblue;
+}
+
+.nav-link {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link li {
+  display: inline;
+}
+
+.nav-link a {
+  text-decoration: none;
+  font-size: 16px;
+  color: steelblue;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-link a:hover {
+  background: lightblue;
+  color: white;
+}
+
+#footer {
+    background: #7040ff;
+    height: 350px;
+}
+
+#newsbar {
+    background: white;
+    margin: 0px;
+    height: 40px;
+    color: #a70700;
+    
+}
+
+
+#newsbar-text {
+    vertical-align: middle;
+}
