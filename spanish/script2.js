@@ -473,9 +473,6 @@ function checkAnswer() {
             $("#q3").hide();
             loadQuestion()                        
         }, 6000);
-        
-    } elif (ans === "") {
-            alert("enter answer");
     } else {
         alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
         $("#qbox").css("background", "#ff0300")
