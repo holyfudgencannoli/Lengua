@@ -464,6 +464,7 @@ function checkAnswer() {
         score++;
         questions.splice(r_no, 1); // Remove the used question
         $("#q2").hide();
+        $("#submit").hide();
         $("#qbox").css("background", "#00ff03")
         $("#q3").show();
         setTimeout(() => {
@@ -471,7 +472,8 @@ function checkAnswer() {
             $("#qbox").css("background", "")
             $("#q2").show();
             $("#q3").hide();
-            loadQuestion()                        
+            loadQuestion();
+            $("#submit").show();                        
         }, 6000);  
     } else {
         alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
