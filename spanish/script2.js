@@ -23,20 +23,20 @@ const questions = [
  {
   "q1": "We want to travel to Spain.",
   "q2": "_____ viajar a España. ",
-  "correct": "Quiero viajar a España.",
-  "answer": "quiero"
+  "correct": "Queremos viajar a España.",
+  "answer": "queremos"
  },
  {
   "q1": "Do you all want to watch a movie?",
   "q2": "¿_____ ver una película?",
-  "correct": "¿Quieres ver una película?",
-  "answer": "quieres"
+  "correct": "¿Queréis ver una película?",
+  "answer": "queréis"
  },
  {
   "q1": "They want to buy a house.",
   "q2": "_____ comprar una casa.",
-  "correct": "Quiero comprar una casa.",
-  "answer": "quiero"
+  "correct": "Quieren comprar una casa.",
+  "answer": "quieren"
  },
  {
   "q1": "I tried to help, but I couldn’t.",
@@ -47,8 +47,8 @@ const questions = [
  {
   "q1": "Did you try to talk to him?",
   "q2": "¿_____ hablar con él?",
-  "correct": "¿Quieres hablar con él?",
-  "answer": "quieres"
+  "correct": "¿Quisiste hablar con él?",
+  "answer": "quisiste"
  },
  {
   "q1": "Juan wanted to come, but he was busy.",
@@ -59,20 +59,20 @@ const questions = [
  {
   "q1": "We wanted to call you yesterday.",
   "q2": "_____ llamarte ayer. ",
-  "correct": "Quise llamarte ayer.",
-  "answer": "quise"
+  "correct": "Quisimos llamarte ayer.",
+  "answer": "quisimos"
  },
  {
   "q1": "Did you all want to study together?",
   "q2": "¿_____ estudiar juntos? ",
-  "correct": "¿Queremos estudiar juntos?",
-  "answer": "queremos"
+  "correct": "¿Quisisteis estudiar juntos?",
+  "answer": "quisisteis"
  },
  {
   "q1": "They refused to wait.",
   "q2": "No _____ esperar. ",
-  "correct": "No quiero esperar.",
-  "answer": "quiero"
+  "correct": "No quisieron esperar.",
+  "answer": "quisieron"
  },
  {
   "q1": "I wanted to be a doctor when I was a child.",
@@ -83,32 +83,32 @@ const questions = [
  {
   "q1": "Did you want to play with me?",
   "q2": "¿_____ jugar conmigo? ",
-  "correct": "¿Quieres jugar conmigo?",
-  "answer": "quieres"
+  "correct": "¿Querías jugar conmigo?",
+  "answer": "querías"
  },
  {
   "q1": "She wanted to travel the world.",
   "q2": "Ella _____ viajar por el mundo.",
-  "correct": "Ella quiere viajar por el mundo.",
-  "answer": "quiere"
+  "correct": "Ella quería viajar por el mundo.",
+  "answer": "quería"
  },
  {
   "q1": "We wanted to watch the maovie together.",
   "q2": "_____ ver la película juntos. ",
-  "correct": "Queremos ver la película juntos.",
-  "answer": "queremos"
+  "correct": "Queríamos ver la película juntos.",
+  "answer": "queríamos"
  },
  {
   "q1": "Did you all want to leave earlier?",
   "q2": "¿_____ salir más temprano? ",
-  "correct": "¿Quieres salir más temprano?",
-  "answer": "quieres"
+  "correct": "¿Queríais salir más temprano?",
+  "answer": "queríais"
  },
  {
   "q1": "They wanted to stay longer.",
   "q2": "_____ quedarse más tiempo.",
-  "correct": "Quiero quedarse más tiempo.",
-  "answer": "quiero"
+  "correct": "Quierían quedarse más tiempo.",
+  "answer": "querían"
  },
  {
   "q1": "I am a student.",
@@ -264,7 +264,7 @@ const questions = [
   "q1": "You would be a good leader.",
   "q2": "_____ un buen líder.",
   "correct": "Serías un buen líder.",
-  "answer": "s3rías"
+  "answer": "serías"
  },
  {
   "q1": "It would be better to wait.",
@@ -472,7 +472,7 @@ function checkAnswer() {
             $("#q2").show();
             $("#q3").hide();
             loadQuestion()                        
-        }, 6000);
+        }, 6000);  
     } else {
         alert("Try again, you can do it. Don't give up! The correct answer is: " + currentQ.answer);
         $("#qbox").css("background", "#ff0300")
@@ -485,7 +485,13 @@ $(document).ready(function () {
     $("#submit").click(function () {
         checkAnswer();
     });
-    
-    
-    
+    $("#next").click(function () {
+        let ans = document.getElementById("ans").value;
+        if (ans === "") {
+            alert("enter answer");
+        } else {
+            alert("after answering, press submit")
+ 
+        }    
+    });
 });
