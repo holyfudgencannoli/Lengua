@@ -3,24 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Word Picker</title>
+  <title>日本語</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div id="word-display">
-      <div class="container text">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="d-flex container-fluid">
+            <a class="nav-link" href="../index.html"><h1 id="logo">Lengua</h1></a>
+            <ul class="nav justify-content-end m-3">
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="newsbar" class="container-fluid d-flex-inline my-3 align-middle">
+        <p id="newsbar-text">This is the area where daily updates will be displayed! Coming soon.</p>
+        
+    </div>
+    
+    <div class="text-center">
+      <div id="word-display" class="container text">
         <p id="japanese-word">Press "Pick a Word" to start</p>
-        <p id="hiragana"></p>
         <input type="text" id="english-reading-input" placeholder="Enter the reading (Romaji)">
         <button id="check-reading-answer">Check Reading</button>
         <button id="pick-word">Pick a Word</button>
         <button id="try-again">Try again</button>
+        <br>
         <p id="meaning-prompt" style="display:none;">Now, enter the meaning:</p>
         <input type="text" id="meaning-input" placeholder="Enter the meaning" style="display:none;">
         <button id="check-meaning-answer" style="display:none;">Check Meaning</button>
       </div>
   </div>
+  <br>
+
   
 
   <script src="../js/jp.js"></script>
