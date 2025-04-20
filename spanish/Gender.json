@@ -1,0 +1,406 @@
+gq_questions = [
+ {
+  "article": "el",
+  "noun": "libro"
+ },
+ {
+  "article": "la",
+  "noun": "casa"
+ },
+ {
+  "article": "el",
+  "noun": "perro"
+ },
+ {
+  "article": "la",
+  "noun": "mesa"
+ },
+ {
+  "article": "el",
+  "noun": "coche"
+ },
+ {
+  "article": "la",
+  "noun": "silla"
+ },
+ {
+  "article": "el",
+  "noun": "sol"
+ },
+ {
+  "article": "la",
+  "noun": "luna"
+ },
+ {
+  "article": "el",
+  "noun": "árbol"
+ },
+ {
+  "article": "la",
+  "noun": "flor"
+ },
+ {
+  "article": "el",
+  "noun": "mar"
+ },
+ {
+  "article": "la",
+  "noun": "playa"
+ },
+ {
+  "article": "el",
+  "noun": "río"
+ },
+ {
+  "article": "la",
+  "noun": "montaña"
+ },
+ {
+  "article": "el",
+  "noun": "cielo"
+ },
+ {
+  "article": "la",
+  "noun": "nube"
+ },
+ {
+  "article": "el",
+  "noun": "pájaro"
+ },
+ {
+  "article": "la",
+  "noun": "ventana"
+ },
+ {
+  "article": "el",
+  "noun": "reloj"
+ },
+ {
+  "article": "la",
+  "noun": "puerta"
+ },
+ {
+  "article": "el",
+  "noun": "teléfono"
+ },
+ {
+  "article": "la",
+  "noun": "calle"
+ },
+ {
+  "article": "el",
+  "noun": "zapato"
+ },
+ {
+  "article": "la",
+  "noun": "camisa"
+ },
+ {
+  "article": "el",
+  "noun": "pantalón"
+ },
+ {
+  "article": "la",
+  "noun": "falda"
+ },
+ {
+  "article": "el",
+  "noun": "sombrero"
+ },
+ {
+  "article": "la",
+  "noun": "chaqueta"
+ },
+ {
+  "article": "el",
+  "noun": "pez"
+ },
+ {
+  "article": "la",
+  "noun": "leche"
+ },
+ {
+  "article": "el",
+  "noun": "queso"
+ },
+ {
+  "article": "la",
+  "noun": "manzana"
+ },
+ {
+  "article": "el",
+  "noun": "plátano"
+ },
+ {
+  "article": "la",
+  "noun": "naranja"
+ },
+ {
+  "article": "el",
+  "noun": "huevo"
+ },
+ {
+  "article": "la",
+  "noun": "sopa"
+ },
+ {
+  "article": "el",
+  "noun": "pan"
+ },
+ {
+  "article": "la",
+  "noun": "mantequilla"
+ },
+ {
+  "article": "el",
+  "noun": "aceite"
+ },
+ {
+  "article": "la",
+  "noun": "sal"
+ },
+ {
+  "article": "el",
+  "noun": "azúcar"
+ },
+ {
+  "article": "la",
+  "noun": "miel"
+ },
+ {
+  "article": "el",
+  "noun": "vino"
+ },
+ {
+  "article": "la",
+  "noun": "cerveza"
+ },
+ {
+  "article": "el",
+  "noun": "café"
+ },
+ {
+  "article": "la",
+  "noun": "taza"
+ },
+ {
+  "article": "el",
+  "noun": "vaso"
+ },
+ {
+  "article": "la",
+  "noun": "botella"
+ },
+ {
+  "article": "el",
+  "noun": "cuchillo"
+ },
+ {
+  "article": "la",
+  "noun": "cuchara"
+ },
+ {
+  "article": "el",
+  "noun": "tenedor"
+ },
+ {
+  "article": "la",
+  "noun": "servilleta"
+ },
+ {
+  "article": "el",
+  "noun": "plato"
+ },
+ {
+  "article": "la",
+  "noun": "olla"
+ },
+ {
+  "article": "el",
+  "noun": "sartén"
+ },
+ {
+  "article": "la",
+  "noun": "cocina"
+ },
+ {
+  "article": "el",
+  "noun": "baño"
+ },
+ {
+  "article": "la",
+  "noun": "ducha"
+ },
+ {
+  "article": "el",
+  "noun": "jabón"
+ },
+ {
+  "article": "la",
+  "noun": "toalla"
+ },
+ {
+  "article": "el",
+  "noun": "espejo"
+ },
+ {
+  "article": "la",
+  "noun": "cama"
+ },
+ {
+  "article": "el",
+  "noun": "colchón"
+ },
+ {
+  "article": "la",
+  "noun": "sábana"
+ },
+ {
+  "article": "el",
+  "noun": "armario"
+ },
+ {
+  "article": "la",
+  "noun": "lámpara"
+ },
+ {
+  "article": "el",
+  "noun": "escritorio"
+ },
+ {
+  "article": "la",
+  "noun": "alfombra"
+ },
+ {
+  "article": "el",
+  "noun": "suelo"
+ },
+ {
+  "article": "la",
+  "noun": "pared"
+ },
+ {
+  "article": "el",
+  "noun": "techo"
+ },
+ {
+  "article": "la",
+  "noun": "escalera"
+ },
+ {
+  "article": "el",
+  "noun": "ascensor"
+ },
+ {
+  "article": "la",
+  "noun": "oficina"
+ },
+ {
+  "article": "el",
+  "noun": "trabajo"
+ },
+ {
+  "article": "la",
+  "noun": "escuela"
+ },
+ {
+  "article": "el",
+  "noun": "lápiz"
+ },
+ {
+  "article": "la",
+  "noun": "pluma"
+ },
+ {
+  "article": "el",
+  "noun": "cuaderno"
+ },
+ {
+  "article": "la",
+  "noun": "mochila"
+ },
+ {
+  "article": "el",
+  "noun": "libro"
+ },
+ {
+  "article": "la",
+  "noun": "tarea"
+ },
+ {
+  "article": "el",
+  "noun": "examen"
+ },
+ {
+  "article": "la",
+  "noun": "pregunta"
+ },
+ {
+  "article": "el",
+  "noun": "estudiante"
+ },
+ {
+  "article": "la",
+  "noun": "profesora"
+ },
+ {
+  "article": "el",
+  "noun": "profesor"
+ },
+ {
+  "article": "la",
+  "noun": "clase"
+ },
+ {
+  "article": "el",
+  "noun": "papel"
+ },
+ {
+  "article": "la",
+  "noun": "pizarra"
+ },
+ {
+  "article": "el",
+  "noun": "marcador"
+ },
+ {
+  "article": "la",
+  "noun": "biblioteca"
+ },
+ {
+  "article": "el",
+  "noun": "deporte"
+ },
+ {
+  "article": "la",
+  "noun": "bicicleta"
+ },
+ {
+  "article": "el",
+  "noun": "fútbol"
+ },
+ {
+  "article": "la",
+  "noun": "natación"
+ },
+ {
+  "article": "el",
+  "noun": "juego"
+ },
+ {
+  "article": "la",
+  "noun": "música"
+ },
+ {
+  "article": "el",
+  "noun": "cine"
+ },
+ {
+  "article": "la",
+  "noun": "película"
+ },
+ {
+  "article": "el",
+  "noun": "teatro"
+ }
+]
