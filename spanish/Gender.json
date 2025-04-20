@@ -1,405 +1,507 @@
-{
+[
+ {
   "article": "el",
-  "noun": "libro"
+  "noun": "libro",
+  "full": "el libro"
  },
  {
   "article": "la",
-  "noun": "casa"
+  "noun": "casa",
+  "full": "la casa"
  },
  {
   "article": "el",
-  "noun": "perro"
+  "noun": "perro",
+  "full": "el perro"
  },
  {
   "article": "la",
-  "noun": "mesa"
+  "noun": "mesa",
+  "full": "la mesa"
  },
  {
   "article": "el",
-  "noun": "coche"
+  "noun": "coche",
+  "full": "el coche"
  },
  {
   "article": "la",
-  "noun": "silla"
+  "noun": "silla",
+  "full": "la silla"
  },
  {
   "article": "el",
-  "noun": "sol"
+  "noun": "sol",
+  "full": "el sol"
  },
  {
   "article": "la",
-  "noun": "luna"
+  "noun": "luna",
+  "full": "la luna"
  },
  {
   "article": "el",
-  "noun": "árbol"
+  "noun": "árbol",
+  "full": "el árbol"
  },
  {
   "article": "la",
-  "noun": "flor"
+  "noun": "flor",
+  "full": "la flor"
  },
  {
   "article": "el",
-  "noun": "mar"
+  "noun": "mar",
+  "full": "el mar"
  },
  {
   "article": "la",
-  "noun": "playa"
+  "noun": "playa",
+  "full": "la playa"
  },
  {
   "article": "el",
-  "noun": "río"
+  "noun": "río",
+  "full": "el río"
  },
  {
   "article": "la",
-  "noun": "montaña"
+  "noun": "montaña",
+  "full": "la montaña"
  },
  {
   "article": "el",
-  "noun": "cielo"
+  "noun": "cielo",
+  "full": "el cielo"
  },
  {
   "article": "la",
-  "noun": "nube"
+  "noun": "nube",
+  "full": "la nube"
  },
  {
   "article": "el",
-  "noun": "pájaro"
+  "noun": "pájaro",
+  "full": "el pájaro"
  },
  {
   "article": "la",
-  "noun": "ventana"
+  "noun": "ventana",
+  "full": "la ventana"
  },
  {
   "article": "el",
-  "noun": "reloj"
+  "noun": "reloj",
+  "full": "el reloj"
  },
  {
   "article": "la",
-  "noun": "puerta"
+  "noun": "puerta",
+  "full": "la puerta"
  },
  {
   "article": "el",
-  "noun": "teléfono"
+  "noun": "teléfono",
+  "full": "el teléfono"
  },
  {
   "article": "la",
-  "noun": "calle"
+  "noun": "calle",
+  "full": "la calle"
  },
  {
   "article": "el",
-  "noun": "zapato"
+  "noun": "zapato",
+  "full": "el zapato"
  },
  {
   "article": "la",
-  "noun": "camisa"
+  "noun": "camisa",
+  "full": "la camisa"
  },
  {
   "article": "el",
-  "noun": "pantalón"
+  "noun": "pantalón",
+  "full": "el pantalón"
  },
  {
   "article": "la",
-  "noun": "falda"
+  "noun": "falda",
+  "full": "la falda"
  },
  {
   "article": "el",
-  "noun": "sombrero"
+  "noun": "sombrero",
+  "full": "el sombrero"
  },
  {
   "article": "la",
-  "noun": "chaqueta"
+  "noun": "chaqueta",
+  "full": "la chaqueta"
  },
  {
   "article": "el",
-  "noun": "pez"
+  "noun": "pez",
+  "full": "el pez"
  },
  {
   "article": "la",
-  "noun": "leche"
+  "noun": "leche",
+  "full": "la leche"
  },
  {
   "article": "el",
-  "noun": "queso"
+  "noun": "queso",
+  "full": "el queso"
  },
  {
   "article": "la",
-  "noun": "manzana"
+  "noun": "manzana",
+  "full": "la manzana"
  },
  {
   "article": "el",
-  "noun": "plátano"
+  "noun": "plátano",
+  "full": "el plátano"
  },
  {
   "article": "la",
-  "noun": "naranja"
+  "noun": "naranja",
+  "full": "la naranja"
  },
  {
   "article": "el",
-  "noun": "huevo"
+  "noun": "huevo",
+  "full": "el huevo"
  },
  {
   "article": "la",
-  "noun": "sopa"
+  "noun": "sopa",
+  "full": "la sopa"
  },
  {
   "article": "el",
-  "noun": "pan"
+  "noun": "pan",
+  "full": "el pan"
  },
  {
   "article": "la",
-  "noun": "mantequilla"
+  "noun": "mantequilla",
+  "full": "la mantequilla"
  },
  {
   "article": "el",
-  "noun": "aceite"
+  "noun": "aceite",
+  "full": "el aceite"
  },
  {
   "article": "la",
-  "noun": "sal"
+  "noun": "sal",
+  "full": "la sal"
  },
  {
   "article": "el",
-  "noun": "azúcar"
+  "noun": "azúcar",
+  "full": "el azúcar"
  },
  {
   "article": "la",
-  "noun": "miel"
+  "noun": "miel",
+  "full": "la miel"
  },
  {
   "article": "el",
-  "noun": "vino"
+  "noun": "vino",
+  "full": "el vino"
  },
  {
   "article": "la",
-  "noun": "cerveza"
+  "noun": "cerveza",
+  "full": "la cerveza"
  },
  {
   "article": "el",
-  "noun": "café"
+  "noun": "café",
+  "full": "el café"
  },
  {
   "article": "la",
-  "noun": "taza"
+  "noun": "taza",
+  "full": "la taza"
  },
  {
   "article": "el",
-  "noun": "vaso"
+  "noun": "vaso",
+  "full": "el vaso"
  },
  {
   "article": "la",
-  "noun": "botella"
+  "noun": "botella",
+  "full": "la botella"
  },
  {
   "article": "el",
-  "noun": "cuchillo"
+  "noun": "cuchillo",
+  "full": "el cuchillo"
  },
  {
   "article": "la",
-  "noun": "cuchara"
+  "noun": "cuchara",
+  "full": "la cuchara"
  },
  {
   "article": "el",
-  "noun": "tenedor"
+  "noun": "tenedor",
+  "full": "el tenedor"
  },
  {
   "article": "la",
-  "noun": "servilleta"
+  "noun": "servilleta",
+  "full": "la servilleta"
  },
  {
   "article": "el",
-  "noun": "plato"
+  "noun": "plato",
+  "full": "el plato"
  },
  {
   "article": "la",
-  "noun": "olla"
+  "noun": "olla",
+  "full": "la olla"
  },
  {
   "article": "el",
-  "noun": "sartén"
+  "noun": "sartén",
+  "full": "el sartén"
  },
  {
   "article": "la",
-  "noun": "cocina"
+  "noun": "cocina",
+  "full": "la cocina"
  },
  {
   "article": "el",
-  "noun": "baño"
+  "noun": "baño",
+  "full": "el baño"
  },
  {
   "article": "la",
-  "noun": "ducha"
+  "noun": "ducha",
+  "full": "la ducha"
  },
  {
   "article": "el",
-  "noun": "jabón"
+  "noun": "jabón",
+  "full": "el jabón"
  },
  {
   "article": "la",
-  "noun": "toalla"
+  "noun": "toalla",
+  "full": "la toalla"
  },
  {
   "article": "el",
-  "noun": "espejo"
+  "noun": "espejo",
+  "full": "el espejo"
  },
  {
   "article": "la",
-  "noun": "cama"
+  "noun": "cama",
+  "full": "la cama"
  },
  {
   "article": "el",
-  "noun": "colchón"
+  "noun": "colchón",
+  "full": "el colchón"
  },
  {
   "article": "la",
-  "noun": "sábana"
+  "noun": "sábana",
+  "full": "la sábana"
  },
  {
   "article": "el",
-  "noun": "armario"
+  "noun": "armario",
+  "full": "el armario"
  },
  {
   "article": "la",
-  "noun": "lámpara"
+  "noun": "lámpara",
+  "full": "la lámpara"
  },
  {
   "article": "el",
-  "noun": "escritorio"
+  "noun": "escritorio",
+  "full": "el escritorio"
  },
  {
   "article": "la",
-  "noun": "alfombra"
+  "noun": "alfombra",
+  "full": "la alfombra"
  },
  {
   "article": "el",
-  "noun": "suelo"
+  "noun": "suelo",
+  "full": "el suelo"
  },
  {
   "article": "la",
-  "noun": "pared"
+  "noun": "pared",
+  "full": "la pared"
  },
  {
   "article": "el",
-  "noun": "techo"
+  "noun": "techo",
+  "full": "el techo"
  },
  {
   "article": "la",
-  "noun": "escalera"
+  "noun": "escalera",
+  "full": "la escalera"
  },
  {
   "article": "el",
-  "noun": "ascensor"
+  "noun": "ascensor",
+  "full": "el ascensor"
  },
  {
   "article": "la",
-  "noun": "oficina"
+  "noun": "oficina",
+  "full": "la oficina"
  },
  {
   "article": "el",
-  "noun": "trabajo"
+  "noun": "trabajo",
+  "full": "el trabajo"
  },
  {
   "article": "la",
-  "noun": "escuela"
+  "noun": "escuela",
+  "full": "la escuela"
  },
  {
   "article": "el",
-  "noun": "lápiz"
+  "noun": "lápiz",
+  "full": "el lápiz"
  },
  {
   "article": "la",
-  "noun": "pluma"
+  "noun": "pluma",
+  "full": "la pluma"
  },
  {
   "article": "el",
-  "noun": "cuaderno"
+  "noun": "cuaderno",
+  "full": "el cuaderno"
  },
  {
   "article": "la",
-  "noun": "mochila"
+  "noun": "mochila",
+  "full": "la mochila"
  },
  {
   "article": "el",
-  "noun": "libro"
+  "noun": "libro",
+  "full": "el libro"
  },
  {
   "article": "la",
-  "noun": "tarea"
+  "noun": "tarea",
+  "full": "la tarea"
  },
  {
   "article": "el",
-  "noun": "examen"
+  "noun": "examen",
+  "full": "el examen"
  },
  {
   "article": "la",
-  "noun": "pregunta"
+  "noun": "pregunta",
+  "full": "la pregunta"
  },
  {
   "article": "el",
-  "noun": "estudiante"
+  "noun": "estudiante",
+  "full": "el estudiante"
  },
  {
   "article": "la",
-  "noun": "profesora"
+  "noun": "profesora",
+  "full": "la profesora"
  },
  {
   "article": "el",
-  "noun": "profesor"
+  "noun": "profesor",
+  "full": "el profesor"
  },
  {
   "article": "la",
-  "noun": "clase"
+  "noun": "clase",
+  "full": "la clase"
  },
  {
   "article": "el",
-  "noun": "papel"
+  "noun": "papel",
+  "full": "el papel"
  },
  {
   "article": "la",
-  "noun": "pizarra"
+  "noun": "pizarra",
+  "full": "la pizarra"
  },
  {
   "article": "el",
-  "noun": "marcador"
+  "noun": "marcador",
+  "full": "el marcador"
  },
  {
   "article": "la",
-  "noun": "biblioteca"
+  "noun": "biblioteca",
+  "full": "la biblioteca"
  },
  {
   "article": "el",
-  "noun": "deporte"
+  "noun": "deporte",
+  "full": "el deporte"
  },
  {
   "article": "la",
-  "noun": "bicicleta"
+  "noun": "bicicleta",
+  "full": "la bicicleta"
  },
  {
   "article": "el",
-  "noun": "fútbol"
+  "noun": "fútbol",
+  "full": "el fútbol"
  },
  {
   "article": "la",
-  "noun": "natación"
+  "noun": "natación",
+  "full": "la natación"
  },
  {
   "article": "el",
-  "noun": "juego"
+  "noun": "juego",
+  "full": "el juego"
  },
  {
   "article": "la",
-  "noun": "música"
+  "noun": "música",
+  "full": "la música"
  },
  {
   "article": "el",
-  "noun": "cine"
+  "noun": "cine",
+  "full": "el cine"
  },
  {
   "article": "la",
-  "noun": "película"
+  "noun": "película",
+  "full": "la película"
  },
  {
   "article": "el",
-  "noun": "teatro"
+  "noun": "teatro",
+  "full": "el teatro"
  }
 ]
