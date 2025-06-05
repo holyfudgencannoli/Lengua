@@ -5,20 +5,13 @@ services:
     image: mrlt8/wyze-bridge
     restart: always
     ports:
-      - 8554:8554  # RTSP
-      - 8888:8888  # Web UI
+      - 8554:8554   # RTSP
+      - 8888:8888   # Web UI
     environment:
       - WYZE_EMAIL=your@email.com
-      - WYZE_PASSWORD=yourWyzePassword
-      # Optional: 2FA Code App Password if enabled
-      - WYZE_APP_PASSWORD=yourAppPassword
+      - WYZE_PASSWORD=your_wyze_password
     volumes:
       - wyze-data:/data
-    networks:
-      - frigate_net
 
 volumes:
   wyze-data:
-
-networks:
-  frigate_net:
