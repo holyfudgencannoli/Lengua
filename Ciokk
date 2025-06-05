@@ -1,0 +1,24 @@
+mqtt:
+  enabled: false  # unless you're using it
+
+cameras:
+  wyze_cam:
+    ffmpeg:
+      inputs:
+        - path: rtsp://wyze-bridge:8554/front_door  # adjust the name
+          roles:
+            - detect
+            - record
+    detect:
+      width: 1280
+      height: 720
+      fps: 5
+    record:
+      enabled: true
+      retain:
+        days: 3
+        mode: motion
+    snapshots:
+      enabled: true
+      timestamp: true
+      bounding_box: true
