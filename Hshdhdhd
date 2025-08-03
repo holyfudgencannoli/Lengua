@@ -1,0 +1,156 @@
+import React, { useState } from "react";
+import "./Navbar.css";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = ["Home", "Features", "Pricing", "About", "Contact"];
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="logo">MyApp</div>
+
+        {/* Hamburger */}
+        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
+        </button>
+
+        {/* Links (desktop) */}
+        <div className="nav-links">
+          {navItems.map((item) => (
+            <a key={item} href="#" className="nav-link">
+              {item}
+            </a>
+          ))}
+          <button className="cta-button">Sign Up</button>
+        </div>
+      </div>
+
+      {/* Mobile dropdown */}
+      {isOpen && (
+        <div className="mobile-menu">
+          {navItems.map((item) => (
+            <a key={item} href="#" className="mobile-link">
+              {item}
+            </a>
+          ))}
+          <button className="cta-button mobile-cta">Sign Up</button>
+        </div>
+      )}
+    </nav>
+  );
+}
+
+/* Container styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Desktop nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #0077ff;
+}
+
+/* Call to action button */
+.cta-button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #005dc1;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 22px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Mobile dropdown */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  padding: 12px 16px;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-link {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.mobile-cta {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Responsive rules */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
