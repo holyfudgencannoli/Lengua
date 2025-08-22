@@ -3,6 +3,7 @@ import http.server
 import socketserver
 import os
 import socket
+import mimetypes
 
 # Configuration
 PORT = 8000
@@ -11,6 +12,12 @@ DIRECTORY = os.path.expanduser(".")
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
+
+    def end_headers(self):
+        # Add headers that tell the browser to download files
+        if self.path != "/" and not self.path.endswith("/"):
+            self.send_header("Content-Disposition", "attachment")
+        super().end_headers()
 
 def get_local_ip():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
