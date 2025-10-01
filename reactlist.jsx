@@ -1,3 +1,6 @@
+import React from "react";
+import { FlatList, View, Text, ViewStyle } from "react-native";
+
 interface Column {
   key: string;
   title: string;
